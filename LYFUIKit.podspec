@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LYFUIKit'
-  s.version          = '1.1.0.Binary'
+  s.version          = '1.0.0.Binary'
   s.summary          = 'A short description of LYFUIKit.'
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
