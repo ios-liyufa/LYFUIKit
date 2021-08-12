@@ -1,22 +1,8 @@
-#
-# Be sure to run `pod lib lint LYFUIKit.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
 
 Pod::Spec.new do |s|
   s.name             = 'LYFUIKit'
-  s.version          = '1.0.0'
+  s.version          = '1.1.0.Binary'
   s.summary          = 'A short description of LYFUIKit.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
                        DESC
@@ -30,7 +16,20 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'LYFUIKit/Classes/**/*'
+  if s.version.to_s.include?'Binary'
+    puts '-------------------------------------------------------------------'
+    puts 'Notice:LYFUIKit is binary now'
+    puts '-------------------------------------------------------------------'
+    s.prepare_command = '/bin/bash build_lib.sh'
+    s.source_files = 'Pod/Products/include/**'
+    s.ios.vendored_libraries = 'Pod/Products/lib/*.a'
+    s.public_header_files = 'Pod/Products/include/*.h'
+  else
+    s.source_files = 'LYFUIKit/Classes/**/*'
+  end
+  
+  s.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64' }
+
   
   # s.resource_bundles = {
   #   'LYFUIKit' => ['LYFUIKit/Assets/*.png']

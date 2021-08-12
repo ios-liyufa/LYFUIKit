@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		308853CC26C50483001BF7F4 /* placeholder.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 308853C926C50483001BF7F4 /* placeholder.h */; };
+		308853D226C50522001BF7F4 /* UIView+LYFFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 308853D026C50522001BF7F4 /* UIView+LYFFrame.m */; };
+		308853D426C505DB001BF7F4 /* UIView+LYFFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 308853D126C50522001BF7F4 /* UIView+LYFFrame.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -36,12 +39,29 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		308853C526C50483001BF7F4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				308853CC26C50483001BF7F4 /* placeholder.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0883AAB72141684C536ED1F7 /* Pods-LYFUIKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYFUIKit_Example.release.xcconfig"; path = "Target Support Files/Pods-LYFUIKit_Example/Pods-LYFUIKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		0E480D1AB84E0DFD8D666EAD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		11BDB4554AC3EFE996E3AC26 /* Pods-LYFUIKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYFUIKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-LYFUIKit_Example/Pods-LYFUIKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		18330E719D3364BE7F418D46 /* Pods_LYFUIKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LYFUIKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		485F6CBB18566A01AFF1DD53 /* LYFUIKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LYFUIKit.podspec; path = ../LYFUIKit.podspec; sourceTree = "<group>"; };
+		308853C726C50483001BF7F4 /* libLYFUIKitBinary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLYFUIKitBinary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		308853C926C50483001BF7F4 /* placeholder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = placeholder.h; sourceTree = "<group>"; };
+		308853D026C50522001BF7F4 /* UIView+LYFFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+LYFFrame.m"; path = "../../LYFUIKit/Classes/UIView+LYFFrame.m"; sourceTree = "<group>"; };
+		308853D126C50522001BF7F4 /* UIView+LYFFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+LYFFrame.h"; path = "../../LYFUIKit/Classes/UIView+LYFFrame.h"; sourceTree = "<group>"; };
+		485F6CBB18566A01AFF1DD53 /* LYFUIKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LYFUIKit.podspec; path = ../LYFUIKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6003F58A195388D20070C39A /* LYFUIKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYFUIKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -70,6 +90,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		308853C426C50483001BF7F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6003F587195388D20070C39A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -95,12 +122,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		308853C826C50483001BF7F4 /* LYFUIKitBinary */ = {
+			isa = PBXGroup;
+			children = (
+				308853D126C50522001BF7F4 /* UIView+LYFFrame.h */,
+				308853D026C50522001BF7F4 /* UIView+LYFFrame.m */,
+				308853C926C50483001BF7F4 /* placeholder.h */,
+			);
+			path = LYFUIKitBinary;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for LYFUIKit */,
 				6003F5B5195388D20070C39A /* Tests */,
+				308853C826C50483001BF7F4 /* LYFUIKitBinary */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
 				F87C0BB9DEEF6E2270EB950C /* Pods */,
@@ -112,6 +150,7 @@
 			children = (
 				6003F58A195388D20070C39A /* LYFUIKit_Example.app */,
 				6003F5AE195388D20070C39A /* LYFUIKit_Tests.xctest */,
+				308853C726C50483001BF7F4 /* libLYFUIKitBinary.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -198,7 +237,36 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		308853D326C505B9001BF7F4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				308853D426C505DB001BF7F4 /* UIView+LYFFrame.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		308853C626C50483001BF7F4 /* LYFUIKitBinary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 308853CF26C50483001BF7F4 /* Build configuration list for PBXNativeTarget "LYFUIKitBinary" */;
+			buildPhases = (
+				308853D326C505B9001BF7F4 /* Headers */,
+				308853C326C50483001BF7F4 /* Sources */,
+				308853C426C50483001BF7F4 /* Frameworks */,
+				308853C526C50483001BF7F4 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LYFUIKitBinary;
+			productName = LYFUIKitBinary;
+			productReference = 308853C726C50483001BF7F4 /* libLYFUIKitBinary.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		6003F589195388D20070C39A /* LYFUIKit_Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "LYFUIKit_Example" */;
@@ -207,7 +275,6 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				0D7D9B3C1828877C21369AE6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -244,9 +311,15 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = LYF;
+				DefaultBuildSystemTypeForWorkspace = Original;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "1115714135@qq.com";
 				TargetAttributes = {
+					308853C626C50483001BF7F4 = {
+						CreatedOnToolsVersion = 12.1;
+						DevelopmentTeam = 7HJL7LYRVB;
+						ProvisioningStyle = Automatic;
+					};
 					6003F589195388D20070C39A = {
 						DevelopmentTeam = 7HJL7LYRVB;
 					};
@@ -271,6 +344,7 @@
 			targets = (
 				6003F589195388D20070C39A /* LYFUIKit_Example */,
 				6003F5AD195388D20070C39A /* LYFUIKit_Tests */,
+				308853C626C50483001BF7F4 /* LYFUIKitBinary */,
 			);
 		};
 /* End PBXProject section */
@@ -298,24 +372,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0D7D9B3C1828877C21369AE6 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LYFUIKit_Example/Pods-LYFUIKit_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/LYFUIKit/LYFUIKit.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LYFUIKit.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LYFUIKit_Example/Pods-LYFUIKit_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		2BE48E4EAB196FAADCC5FABB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -363,6 +419,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		308853C326C50483001BF7F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				308853D226C50522001BF7F4 /* UIView+LYFFrame.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6003F586195388D20070C39A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -419,6 +483,81 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		308853CD26C50483001BF7F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 7HJL7LYRVB;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		308853CE26C50483001BF7F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 7HJL7LYRVB;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		6003F5BD195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -575,6 +714,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		308853CF26C50483001BF7F4 /* Build configuration list for PBXNativeTarget "LYFUIKitBinary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				308853CD26C50483001BF7F4 /* Debug */,
+				308853CE26C50483001BF7F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6003F585195388D10070C39A /* Build configuration list for PBXProject "LYFUIKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
