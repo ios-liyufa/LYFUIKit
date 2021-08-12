@@ -1,5 +1,5 @@
 PODS:
-  - LYFUIKit (0.1.0)
+  - LYFUIKit (1.0.0)
 
 DEPENDENCIES:
   - LYFUIKit (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  LYFUIKit: e17c983d3c1e312565afc5eb05db8335cb06cbdd
+  LYFUIKit: 1cb060d7e299aa49cd892afb01a4cdc2dc2b129f
 
 PODFILE CHECKSUM: 7033b3437ce40e973f757b3852d4fa643cb0bb88
 
