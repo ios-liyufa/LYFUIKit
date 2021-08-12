@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'LYFUIKit_Example' do
+  pod 'LYFUIKit', :path => '../'
+
+  target 'LYFUIKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
