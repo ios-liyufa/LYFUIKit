@@ -22,7 +22,7 @@ pod 'LYFUIKit'
 
 ## Author
 
-1115714135@qq.com, li.yufa@starrides.com
+liyufa, 1115714135@qq.com
 
 ## License
 
